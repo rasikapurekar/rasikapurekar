@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1699a6e4f5.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        /* navbar start */
+
+        .topnav-right {
+            float: right;
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background: transparent;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* project-section */
+
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 50px;
+        }
+
+        .project-1 {
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-1 img {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+            transition: transform 0.5s;
+        }
+
+        .layer {
+            width: 100%;
+            height: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), aqua);
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 40px;
+            text-align: center;
+            font-size: 14px;
+            transition: height 0.5s;
+            cursor: pointer;
+        }
+
+        .layer h3 {
+            font-weight: 500;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .layer a {
+            margin-top: 20px;
+            color: rgb(3, 104, 104);
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 60px;
+            background: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .project-1:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-1:hover .layer {
+            height: 100%;
+            text-align: center;
+        }
+
+        /* contact-section */
+
+        .contact-center {
+            flex-basis: 35%;
+        }
+
+        .contact-center p {
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+
+<body style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 19px;">
+
+    <!--navbar start-->
+
+    <nav class="topnav-right" style="position: fixed; width: 100%;">
+        <ul id="ul">
+            <li id="li"><a class="active" href="#home"><b>Home</b></a></li>
+            <li id="li"><a href="#about"><b>About</b></a></li>
+            <li id="li"><a href="#skills"><b>Skills</b></a></li>
+            <li id="li"><a href="#project"><b>Projects</b></a></li>
+            <li id="li"><a href="#contact"><b>Contact</b></a></li>
+        </ul>
+        <hr style="width:100%;">
+    </nav><br>
+
+    <!--navbar end-->
+
+    <!-- home page start-->
+
+    <div id="home" style="height: 620px; width: 100%; ">
+        <div style=" height: 500px;width: 100%;">
+            <div style="height: 400px;width: 43%; float: left; margin-top: 200px; margin-left: 70px;">
+                <h2 style="color: antiquewhite;">Hi,</h2>
+                <h2 style="color: antiquewhite;">I'm Rasika Purekar</h2>
+                <h3 style="color: antiquewhite; color: aquamarine;">Web Developer</h3>
+                <p style="color: antiquewhite;">I am a passionate web developer with experience in HTML, CSS, and
+                    JavaScript. <br>
+                    I love creating responsive and user-friendly websites.</p>
+            </div>
+
+            <div
+                style="height: 400px;width: 50%; float: left; background-image: url('Web-development-2.jpg'); background-size: cover; margin-top: 150px; border-radius: 20px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- home page end -->
+
+    <!-- about section start -->
+    <div style="height: 720px; width: 100%; " id="about"><br><br>
+        <h2 style="padding-left: 20px; color: antiquewhite; color:aqua">About Me</h2>
+        <hr style="width: 15%; margin-left: 15px;">
+        <br>
+        <div style="height: 400px;width: 47%; float: left;">
+            <center>
+                <img src="rasika.jpeg" alt="" height="425px" width="59%" style="border-radius: 50%;">
+            </center>
+        </div>
+
+        <div style="height: 400px;width: 50%; float: left;">
+            <h2 style="color:aqua"><b>Rasika Purekar</b></h2>
+            <hr style="width:35%; text-align:left; margin-left:0">
+            <h3 style="color: antiquewhite;">
+                <p style="font-size: 18px; color:gainsboro;"> A passionate and enthusiastic fresher eager to kick-start
+                    my career in the field of web development.
+                    I have a solid foundation in programming languages such as Python, HTML, CSS, and JavaScript, along
+                    with experience in working with frameworks like Django.</p>
+                <p style="font-size: 18px; color:gainsboro;">I am also familiar with database management systems like
+                    MySQL, which allows me to effectively store
+                    and retrieve data for web applications. As a fast learner with a keen eye for detail, I am eager to
+                    contribute my enthusiasm and fresh perspective to innovative projects and learn from experienced
+                    professionals in the industry.</p>
+            </h3>
+
+            <br>
+            <div style="text-align: center; font-family: Arial, sans-serif; color: #333; float: left;">
+                <p>
+                    <a href="https://www.linkedin.com/in/rasika-purekar-714201289"
+                        style="display: inline-block; background-color: aqua; color: black; text-decoration: none; padding: 1rem 1.5rem; border-radius: 1rem;"><b>LinkedIn</b></a>
+                </p>
+            </div>
+            <div
+                style="text-align: center; font-family: Arial, sans-serif; color: #333; float: left; margin-left: 20px;">
+                <p>
+                    <a href="rasika-resume(2024).pdf" download="rasika-resume(2024).pdf"
+                        style="display: inline-block; background-color: aqua; color: black; text-decoration: none; padding: 1rem 1.5rem; border-radius: 1rem;"><b>Download
+                            CV</b></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- about section end -->
+
+    <!-- skill section start -->
+
+    <div style="height: 720px; width: 100%; " id="skills"><br><br>
+        <h2 style="padding-left: 30px; color: antiquewhite; color:aqua;">Skills</h2>
+        <hr style="width: 7%; margin-left: 15px;">
+        <div
+            style="height: 250px; width: 80%; background: linear-gradient(to right, #66ffcc,#ffffff ); margin-left: 150px; margin-top: 30px; border-radius: 20px;">
+            <i class="fa-sharp fa-solid fa-code" style="padding-left: 30px; padding-top: 30px; font-size: 35px;"></i>
+            <h4 style="padding-left: 30px;"><u>Front-end Developer</u></h4>
+            <p
+                style="padding-left: 20px; padding-right: 15px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                A front-end developer specializes in building user interfaces and experiences for websites and web
+                applications.
+                I'm proficient in HTML, CSS, and JavaScript, the core technologies used for creating and styling web
+                pages.
+            </p>
+        </div>
+
+        <div
+            style="height: 250px; width: 80%; background: linear-gradient(to right, #66ffcc,#ffffff ); margin-left: 150px; margin-top: 50px; border-radius: 20px;">
+            <i class="fa-brands fa-python" style="padding-left: 35px; padding-top: 30px; font-size: 45px;"></i>
+            <h4 style="padding-left: 30px; "><u>Back-end Developer</u></h4>
+            <p style="padding: 13px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                "I'm a Python developer specializing in web development using the Django framework. <br>
+                With Django, I build robust, scalable web applications efficiently.
+                Proficient in Django's features like ORM, templating, and authentication, I create dynamic and secure
+                websites.</p>
+        </div>
+
+
+    </div>
+
+    <!-- skill section end -->
+
+    <!-- project section start -->
+    <div style="height: 500px; width: 100%; " id="project">
+
+        <div id="project" style="padding-top: 40px;">
+            <div>
+                <h2 class="sub-title" style="color: aqua; padding-left: 20px;">My Projects</h2>
+                <hr style="width: 13%; margin-left: 15px;">
+                <div class="project-list" style="padding: 25px;">
+                    <div class="project-1">
+                        <img src="Python.jpg">
+                        <div class="layer">
+                            <h3 style="color: antiquewhite;">Billing System</h3>
+                            <p style="color: antiquewhite;">By using Functional Programmin (Python)</p>
+                            <a href="https://github.com/rasikapurekar/skybug-internship.git"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-1">
+                        <img src="calculator.jpg">
+                        <div class="layer">
+                            <h3 style="color: antiquewhite;">Calculator</h3>
+                            <p style="color: antiquewhite;">By using HTML, CSS, JavaScript</p>
+                            <a href="https://github.com/rasikapurekar/skybug-internship.git"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-1">
+                        <img src="canteen.png">
+                        <div class="layer">
+                            <h3 style="color: antiquewhite;">Canteen Management System</h3>
+                            <p style="color: antiquewhite;">Front-end : HTML, CSS, PHP <br>
+                                Back-end : MySQL</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- project section end -->
+
+    <!-- contact section start -->
+
+    <div style="height: 600px; width: 100%; " id="contact">
+
+        <div style="height: 525px; width: 80%; background: transparent; margin-top: 70px;"><br>
+            <h1 style="color: aqua; text-align: left; padding-left: 20px; padding-top: 10px;">Contact Me</h1>
+            <hr style="width: 20%; background-color: #333; margin-left: 15px;"><br><br>
+            <center>
+                <h3 style="color: #587276; margin-left: 250px; margin-top: 10px;">Below are the details to reach out to me!</h3><br><br>
+                <!-- first div -->
+                <div
+                    style="height: 200px; width: 27%; color: antiquewhite; float: left; margin-left: 206px; margin-top: 20px; border-radius: 20px; border: 1px solid;">
+                    <i class="fa-solid fa-location-dot" style="padding-top: 25px; color: #66ffcc;"></i>
+                    <h3 style="padding-top: 10px;">Address</h3>
+                    <hr style="width: 50%;">
+                    <p
+                        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #66ffcc;">
+                        <b>Pune,
+                            India</b></p>
+
+                </div>
+
+                <!-- second div -->
+                <div
+                    style="height: 200px; width: 27%; color: antiquewhite; float: left; margin-top: 20px; margin-left: 10px; border-radius: 20px; border: 1px solid;">
+                    <i class="fa-sharp fa-solid fa-phone-volume" style="padding-top: 25px; color: #66ffcc;"></i>
+                    <h3 style="padding-top: 10px;">Contact Number</h3>
+                    <hr style="width: 50%;">
+                    <p
+                        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #66ffcc;">
+                        <b>+91 8600494202</b></p>
+
+                </div>
+
+                <!-- third div -->
+                <div
+                    style="height: 200px; width: 27%; color: antiquewhite; float: left; margin-top: 20px; margin-left: 10px; border-radius: 20px; border: 1px solid;">
+                    <i class="fa-sharp fa-solid fa-paper-plane" style="padding-top: 25px; color: #66ffcc;"></i>
+                    <h3 style="padding-top: 5px;">E-mail Address</h3>
+                    <hr style="width: 50%;">
+                    <p
+                        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #66ffcc;">
+                        <b>purekarrasika@gmail.com</b>
+                    </p>
+
+                </div>
+            </center>
+        </div>
+
+
+    </div>
+    <hr style="width: 50%; margin-top: 30px;">
+
+    <div style="height: 100px; width: 100%; padding-top: 20px; color: rgb(131, 166, 180);">
+        <center>
+            <footer>
+                <p>&copy; 2024 Rasika Purekar. All rights reserved.</p>
+                <p>Contact: purekarrasika@gmail.com | +91 8600494202</p>
+            </footer>
+        </center>
+    </div>
+
+    <!-- contact sectoin end -->
+
+</body>
+
+</html>
